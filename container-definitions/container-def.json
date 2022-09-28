@@ -1,7 +1,7 @@
 [
     {
-      "name": "binpipe-devops",
-      "image": "879566836351.dkr.ecr.us-east-1.amazonaws.com/workshop:latest",
+      "name": "color-container",
+      "image": "334846596010.dkr.ecr.ap-south-1.amazonaws.com/color-app:color-app-1",
       "cpu": 10,
       "memory": 256,
       "essential": true,
@@ -13,8 +13,8 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": { 
-          "awslogs-group" : "/ecs/frontend-container",
-          "awslogs-region": "us-east-1"
+          "awslogs-group" : "/ecs/color-container",
+          "awslogs-region": "ap-south-1"
         }
       }
     }

@@ -1,11 +1,11 @@
 resource "aws_lb" "test-lb" {
-  name               = "test-ecs-lb"
+  name               = "ecs-lb"
   load_balancer_type = "application"
   internal           = false
   subnets            = module.vpc.public_subnets
   tags = {
     "env"       = "dev"
-    "createdBy" = "binpipe"
+    "createdBy" = "rajat2849"
   }
   security_groups = [aws_security_group.lb.id]
 }
@@ -28,12 +28,12 @@ resource "aws_security_group" "lb" {
 
   tags = {
     "env"       = "dev"
-    "createdBy" = "binpipe"
+    "createdBy" = "rajat2849"
   }
 }
 
 resource "aws_lb_target_group" "lb_target_group" {
-  name        = "binpipe-target-group"
+  name        = "rajat2849-target-group"
   port        = "80"
   protocol    = "HTTP"
   target_type = "instance"
