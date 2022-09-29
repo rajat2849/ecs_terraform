@@ -1,7 +1,6 @@
 resource "aws_iam_role" "ecs-instance-role" {
   name = "ecs-instance-role-test-web"
   path = "/"
-
   assume_role_policy = <<EOF
 {
   "Version": "2008-10-17",
