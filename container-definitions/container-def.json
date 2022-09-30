@@ -1,7 +1,7 @@
 [
     {
       "name": "color-container",
-      "image": "334846596010.dkr.ecr.ap-south-1.amazonaws.com/color-app:color-app-2",
+      "image": "334846596010.dkr.ecr.ap-south-1.amazonaws.com/color-app:latest",
       "cpu": 10,
       "memory": 256,
       "essential": true,
